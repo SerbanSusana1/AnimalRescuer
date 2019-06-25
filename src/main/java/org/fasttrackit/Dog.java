@@ -1,6 +1,13 @@
 package org.fasttrackit;
 
 public class Dog extends Animal {
-  String color;
+  private String color;
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 }

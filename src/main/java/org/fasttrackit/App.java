@@ -12,48 +12,48 @@ public class App
     {
         Animal animal = new Animal();
 
-        animal.name = "Sasha";
-        animal.age = 5;
-        animal.health = 8;
-        animal.hangerLevel=9;
-        animal.mindset = 8;
-        animal.animalFood = "pedigre";
-        animal.activities ="play";
+        animal.setName("Sasha");
+        animal.setAge(5);
+        animal.setHealth(8);
+        animal.setHangerLevel(9);
+        animal.setMindset(8);
+        animal.setAnimalFood("pedigre");
+        animal.setActivities("play");
 
 
         Adopter adopter = new Adopter();
 
-        adopter.name="Popescu";
-        adopter.money=300.50;
+        adopter.setName("Popescu");
+        adopter.setMoney(300.5);
 
          AnimalFood animalFood = new AnimalFood();
 
-         animalFood.name ="Royal Canin";
-         animalFood.price = 10.5;
-         animalFood.quantity = 10;
-         animalFood.expirationDate= LocalDate.of(2019 ,10,25);
+         animalFood.setName("Royal Canin");
+         animalFood.setPrice(10.5);
+         animalFood.setQuantity(10);
+         animalFood.setExpirationDate(LocalDate.of(2019 ,10,25));
 
 
-         animalFood.stock = 15;
+         animalFood.setStock(15);
 
 
 
         Activities activites = new Activities();
 
-            activites.name = "Play";
+            activites.setName("Play");
 
         Vet vet = new Vet();
-         vet.name = "John";
-         vet.speciality="surgeon";
+         vet.setName("John");
+         vet.setSpeciality("surgeon");
 
         Animal dog = new Animal();
-        dog.name = "Loby";
+        dog.setName("Loby");
 
         Adopter resquer = new Adopter();
-         resquer.name = "Ana";
+         resquer.setName("Ana");
 
          Vet vet1 = new Vet();
-         vet1.name = "Crisan";
+         vet1.setName("Crisan");
 
 
     }
