@@ -38,7 +38,22 @@ public class App
 
 
 
+        Activities activites = new Activities();
 
+            activites.name = "Play";
+
+        Vet vet = new Vet();
+         vet.name = "John";
+         vet.speciality="surgeon";
+
+        Animal dog = new Animal();
+        dog.name = "Loby";
+
+        Adopter resquer = new Adopter();
+         resquer.name = "Ana";
+
+         Vet vet1 = new Vet();
+         vet1.name = "Crisan";
 
 
     }
