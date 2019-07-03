@@ -10,6 +10,12 @@ public class Animal {
   private   String animalFood;
   private   String activities;
 
+
+
+   public Animal(){
+       this.setName("Loby");
+   }
+
     public String getName() {
         return name;
     }

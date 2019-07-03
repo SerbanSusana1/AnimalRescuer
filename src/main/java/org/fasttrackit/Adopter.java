@@ -5,6 +5,11 @@ public class Adopter {
    private String name;
    private double money;
 
+   public void feed(String animal,String food){
+       System.out.println("John just gave some  "+food +" food to "+animal);
+   }
+
+
     public String getName() {
         return name;
     }

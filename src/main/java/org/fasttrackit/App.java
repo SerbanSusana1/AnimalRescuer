@@ -55,6 +55,10 @@ public class App
          Vet vet1 = new Vet();
          vet1.setName("Crisan");
 
+         Adopter resquer1 = new Adopter();
+         resquer1.feed("Chaika","Purina");
+
+
 
     }
 }
