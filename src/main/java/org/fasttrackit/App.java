@@ -8,6 +8,8 @@ import java.time.LocalDate;
  */
 public class App 
 {
+
+
     public static void main( String[] args )
     {
         Animal animal = new Animal();
@@ -56,9 +58,11 @@ public class App
          vet1.setName("Crisan");
 
          Adopter resquer1 = new Adopter();
-         resquer1.feed("Chaika","Purina");
+         resquer1.setName("john");
 
 
 
+        resquer1.feed(animal,animalFood);
+        resquer1.activites(animal,activites);
     }
 }
