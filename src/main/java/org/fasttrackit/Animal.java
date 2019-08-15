@@ -1,20 +1,33 @@
 package org.fasttrackit;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Animal {
 
-  private String name;
-  private double age;
-  private double health;
-  private double hangerLevel;
-  private double mindset;
-  private   String animalFood;
-  private   String activities;
+    private String name;
+    private double age;
+    private double health;
+    private double hangerLevel;
+    private double hapinessLevel;
+    private String animalFood;
+    private String activities;
+
+    public void happinesLevel() {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Plese enter happiness: ");
+
+        String happines = scanner.nextLine();  // Read user input
+        System.out.println(getName() + " is :" + happines);
+
+    }
 
 
+    public Animal() {
+        this.setName("Loby");
+    }
 
-   public Animal(){
-       this.setName("Loby");
-   }
 
     public String getName() {
         return name;
@@ -48,12 +61,12 @@ public class Animal {
         this.hangerLevel = hangerLevel;
     }
 
-    public double getMindset() {
-        return mindset;
+    public double getHapinessLevel() {
+        return hapinessLevel;
     }
 
-    public void setMindset(double mindset) {
-        this.mindset = mindset;
+    public void setHapinessLevel(double hapinessLevel) {
+        this.hapinessLevel = hapinessLevel;
     }
 
     public String getAnimalFood() {

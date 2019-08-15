@@ -18,7 +18,7 @@ public class App
         animal.setAge(5);
         animal.setHealth(8);
         animal.setHangerLevel(9);
-        animal.setMindset(8);
+        animal.setHapinessLevel(8);
         animal.setAnimalFood("pedigre");
         animal.setActivities("play");
 
@@ -60,8 +60,11 @@ public class App
          Adopter resquer1 = new Adopter();
          resquer1.setName("john");
 
+        //Dog dog1 =new Dog();
 
 
+        animal.happinesLevel();
+        dog.happinesLevel();
         resquer1.feed(animal,animalFood);
         resquer1.activites(animal,activites);
     }
