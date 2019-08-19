@@ -10,7 +10,7 @@ public class App
 {
 
 
-    public static void main( String[] args )
+    public static void main( String[] args ) throws Exception
     {
         Animal animal = new Animal();
 
@@ -21,7 +21,6 @@ public class App
         animal.setHapinessLevel(8);
         animal.setAnimalFood("pedigre");
         animal.setActivities("play");
-
 
         Adopter adopter = new Adopter();
 
@@ -62,7 +61,9 @@ public class App
 
         //Dog dog1 =new Dog();
 
+        Game foodGame = new Game(animal);
 
+        foodGame.start();
         animal.happinesLevel();
         dog.happinesLevel();
         resquer1.feed(animal,animalFood);

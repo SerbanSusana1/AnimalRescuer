@@ -10,6 +10,8 @@ public class AnimalFood {
    private double price;
    private double quantity;
 
+
+
     public String getName() {
         return name;
     }
