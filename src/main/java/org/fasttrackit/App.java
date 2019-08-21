@@ -61,12 +61,16 @@ public class App
 
         //Dog dog1 =new Dog();
 
-        Game foodGame = new Game(animal);
 
-        foodGame.start();
         animal.happinesLevel();
         dog.happinesLevel();
         resquer1.feed(animal,animalFood);
         resquer1.activites(animal,activites);
+
+        Game game= new Game(animal);
+
+        game.start();
+
+
     }
 }

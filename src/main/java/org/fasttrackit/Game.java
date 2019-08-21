@@ -27,6 +27,11 @@ public class Game {
         initActivities();
         displayActivities();
 
+        initAnimal();
+
+        nameAnimal();
+        requireFeeding();
+        requireActivitiy();
 
     }
 
@@ -92,5 +97,48 @@ public class Game {
 
     }
 
+    private void initAnimal(){
+     Dog dog = new Dog();
+     dog.setName("Loby");
+     dog.setAge(5);
+     dog.setHealth(6);
+     dog.setHangerLevel(5);
+     dog.setHapinessLevel(8);
+     dog.setAnimalFood("pedigree");
+     dog.setActivities("play");
+     dog.setColor("brown");
 
+
+    }
+    private String initResquer() throws Exception{
+        Adopter resquer = new Adopter();
+        System.out.println("Please enter name :");
+        Scanner scanner =  new Scanner(System.in);
+        try {
+            return scanner.nextLine();
+        }catch (InputMismatchException e){
+            throw new Exception("Please enter a valid name");
+        }
+    }
+
+    private void nameAnimal(){
+        System.out.println("please enter the animal name");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+
+    }
+
+    private void requireFeeding(){
+        displayFood();
+        System.out.println("Please choise a food :");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+    }
+
+    private  void requireActivitiy(){
+        displayActivities();
+        System.out.println("Please choise an activity :");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+    }
 }
