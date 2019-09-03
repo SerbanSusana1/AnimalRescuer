@@ -23,6 +23,15 @@ public class Animal {
 
     }
 
+    public void hangerLevel() {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Plese enter hangerLevel: ");
+
+        String hanger = scanner.nextLine();  // Read user input
+        System.out.println(getName() + " is :" + hanger);
+
+    }
 
     public Animal() {
         this.setName("Loby");
